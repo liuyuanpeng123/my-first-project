@@ -1,0 +1,15 @@
+// src/assets/scss/_functions.scss
+
+// 设计稿基准尺寸（根据你的设计图修改）
+$design-width: 1920px;
+$design-height: 1080px;
+
+// 将设计图中的px转换为vw（基于宽度）
+@function px2vw($px) {
+  @return calc($px / $design-width) * 100vw;
+}
+
+// 将设计图中的px转换为vh（基于高度）
+@function px2vh($px) {
+  @return calc($px / $design-height) * 100vh;
+}
